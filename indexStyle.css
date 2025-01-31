@@ -8,7 +8,8 @@
 
 :root {
   --light_background: #fcc010;
-  --light_header: #7c6112;
+  --light_navbar: #7c6112;
+  --light_header: #5a4813;
 }
 
 * {
@@ -50,7 +51,7 @@ body {
 .name {
   font-size: 1.9rem;
   padding-left: 1.8vh;
-  color: var(--light_header);
+  color: var(--light_navbar);
   text-decoration: none;
   font-weight: 700;
 }
@@ -58,7 +59,7 @@ body {
 .navbar a {
   position: relative;
   font-size: 1.3rem;
-  color: var(--light_header);
+  color: var(--light_navbar);
   font-weight: 500;
   text-decoration: none;
   margin-left: 4vh;
@@ -77,4 +78,56 @@ body {
 
 .navbar a:hover::before {
   width: 100%;
+}
+
+/* //////////////////////////
+// Main section */
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20vh;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  margin-left: 15vh;
+}
+
+.content h1 {
+  font-size: 3.5rem;
+  color: var(--light_header);
+}
+
+.content p {
+  color: #453610;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+}
+
+.get-started-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background: var(--light_navbar);
+  color: var(--light_background);
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+}
+
+.get-started-btn:hover {
+  transform: scale(1.1);
+}
+
+.get-started-btn:active {
+  transform: scale(0.9);
 }
