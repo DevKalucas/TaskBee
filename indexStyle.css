@@ -1,0 +1,80 @@
+/* //////////////////////////
+// Imports */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* //////////////////////////
+// Variables */
+
+:root {
+  --light_background: #fcc010;
+  --light_header: #7c6112;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: var(--light_background);
+  font-family: "Poppins", serif;
+}
+
+/* //////////////////////////
+// Navigation Bar */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 40px;
+  display: flex;
+  background: transparent;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.taskBee {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon {
+  width: 8vh;
+}
+
+.name {
+  font-size: 1.9rem;
+  padding-left: 1.8vh;
+  color: var(--light_header);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.navbar a {
+  position: relative;
+  font-size: 1.3rem;
+  color: var(--light_header);
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 4vh;
+}
+
+.navbar a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #ab8411;
+  transition: 0.3s;
+}
+
+.navbar a:hover::before {
+  width: 100%;
+}
