@@ -1,0 +1,48 @@
+:root {
+  --dark_background: #1e1e1e;
+  --dark_foreground: #262626;
+  --dark_headline: #ffffff;
+  --dark_darker_text: #7b7d7e;
+  --dark_icons: #929292;
+  --dark_text: #929292;
+  --dark_active: #eba300;
+  --dark_hover: #f1c40a;
+}
+
+* {
+  user-select: none;
+}
+
+main {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  margin: auto;
+  height: 80vh;
+}
+
+main .header h1 {
+  font-weight: 700;
+  color: var(--dark_headline);
+}
+
+main .task-create {
+  display: flex;
+  flex-direction: row;
+  margin-top: 3vh;
+}
+
+main .task-create svg {
+  fill: var(--dark_active);
+  cursor: pointer;
+}
+
+main .task-create svg:hover {
+  transform: scale(1.1);
+}
+
+main .task-create h3 {
+  padding-left: 0.5rem;
+  font-weight: 400;
+  font-size: 1.1rem;
+}
